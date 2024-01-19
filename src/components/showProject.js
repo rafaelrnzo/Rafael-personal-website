@@ -7,7 +7,7 @@ import { FaCode, FaReact, FaLaravel, FaBootstrap, FaGitAlt, FaMobileAlt, FaPaint
 
 export default function ShowProject(props) {
   return (
-    <div className='border border-indigo-900/50 p-4 rounded-md h-auto justify-between gap-6 flex flex-col hover:border-indigo-500 group transition-all duration-300'>
+    <div className='border border-indigo-900/75 p-4 rounded-md h-auto justify-between gap-6 flex flex-col hover:border-indigo-500 group transition-all duration-300'>
       <div className='gap-2 flex flex-col'>
 
         <div className='h-48 w-full'>

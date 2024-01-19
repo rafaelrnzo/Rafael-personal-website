@@ -31,7 +31,7 @@ export default function TechEmblem() {
 
 const SkillEmblem = (props) => {
   return (
-    <div className=' border border-indigo-900/50 rounded-lg p-4 flex justify-center text-indigo-200 md:text-6xl text-4xl hover:bg-indigo-900/50 '>
+    <div className=' border border-indigo-900/75 rounded-lg p-4 flex justify-center text-indigo-200 md:text-6xl text-4xl hover:bg-indigo-900/50 '>
       {props.children}
 
 

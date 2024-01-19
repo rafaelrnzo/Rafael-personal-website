@@ -1,11 +1,12 @@
-import logo from './logo.svg';
+import { useEffect, useRef } from 'react';
 import './App.css';
 import { useLocation } from 'react-router-dom';
 import { NavLink } from 'react-router-dom';
+import gsap from 'gsap';
+
+//components
 import Header from './components/header';
 import HeroHome from './components/home/heroHome';
-
-
 import SkillHome from './components/home/skillHome';
 import TechEmblem from './components/home/techEmblem';
 import ShowProject from './components/showProject';
@@ -13,10 +14,21 @@ import ProjectHome from './components/home/projectHome';
 import Footer from './components/footer';
 
 function App() {
+  const myElementRef = useRef(null);
+
   const location = useLocation();
+  useEffect(() => {
+    gsap.to(myElementRef.current, {
+      opacity: 1,
+      x: 100,
+      duration: 3,
+    });
+  }, []);
+
+  
 
   return (
-    <div className=' h-auto w-full'>
+    <div className='h-auto w-full'>
       <div className=" container mx-auto px-8 md:px-24 lg:px-52  py-5 h-fit ">
         <Header />
         <body className="h-auto w-auto flex items-center flex-col ">
@@ -27,7 +39,7 @@ function App() {
 
         </body>
       </div>
-      <Footer/>
+      <Footer />
     </div>
   );
 }

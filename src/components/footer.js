@@ -3,7 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagramSquare, FaInstagram, FaDribbble } from
 
 export default function Footer() {
   return (
-    <footer className='border-t border-indigo-900/50 px-8 md:px-24 lg:px-52 p-8 gap-4 flex flex-col mx-auto'>
+    <footer className='border-t border-indigo-900/75 px-8 md:px-24 lg:px-52 p-8 gap-4 flex flex-col mx-auto'>
       <div className='flex flex-row items-center justify-between'>
         <p className='text-xl font-bold'>
           <span className=' md:text-xl text-base text-transparent text-clip bg-clip-text bg-gradient-to-r from-indigo-600 to-indigo-500'> Rafael Lorenzo </span>
